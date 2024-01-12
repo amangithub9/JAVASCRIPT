@@ -1,0 +1,10 @@
+INSERT ELEMENT
+
+1. append => node.append(elem) // adds at the end of node(inside)
+2. prepend => node.prepend(elem) // adds at the start of node(inside)
+3. before => node.before(elem)  // adds before the node (outside)
+4. after => node.after(elem)  // adds after the node (outside)
+
+DELETE ELEMENT  
+
+1. delete => node.remove(elem)  // removes the node

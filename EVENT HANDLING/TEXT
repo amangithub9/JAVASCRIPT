@@ -1,0 +1,31 @@
+-- EVENTS IN JAVASCRIPT
+
+-- THE CHANGE IN THE STATE OF AN OBJECT IS KNOIWN AS EVENTS
+
+-- EVENTS ARE FIREDN TO NOTYFY CODE OF "INTERESTING CHANGE" THAT MAY AFEECT CODE EXECUTION
+
+-- * MOUSE EVENTS (CLICK, DOUBLE CLICK etc)
+-- * KEYBOARD EVENTS (KEYPRESS, KEYUP, KEYDOWN)
+-- * FORM EVENTS(SUBMIT etc)
+-- * PRINT EVENTS AND MANY MORE
+
+-- EVENT OBJECT 
+
+-- It is a special object That has a details about a EVENT
+
+-- all event handlers have access to  the event object's properties and method
+
+-- node.event (e) =>{
+-- // handle here
+-- }
+
+e.target, e.type, e.clientX, e.clientY
+
+Event Listeners
+
+node.addEventListener(event, callback)
+
+
+node.removeEventListener(event, callback)
+
+*Note=>the callback refernce should be same to remove.

@@ -1,0 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+#mode {
+    height: 35px;
+    border-radius: 20%;
+}
+
+.dark {
+    background-color: rgba(10, 5, 5, 0.926);
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}

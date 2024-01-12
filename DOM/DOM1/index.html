@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li id="first"> List 1</li>
+        <li class="cl-1"> List 2</li>
+        <li id="cl-1"> List 3</li>
+
+    </ul>
+    <h1>Heading 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam sint accusamus.</p>
+    <h1>Heading 2</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptate obcaecati placeat?</p>
+    <h1>Heading 3</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem vel praesentium non.</p>
+
+
+    <h2>heading 4 </h2>
+    <div id="div1">
+        <h2>heading 5 </h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <h2>heading 6</h2>
+
+    <!-- 
+        DOM MANIPULATION IS ABOUT CHANGING IN HTML AND CSS FILE FROM JAVASCRIPT LIKE MODIFY ADD ATTRIBUTES DELETE ATTRIBUTES AND MANY
+     -->
+    <script>
+        let elem1 = document.getElementById("first"); // this is about getElementById
+        elem1.innerHTML = "List null"
+        console.log(elem1.innerHTML);
+
+        let e1 = document.getElementsByClassName("cl-1"); // this is about getElementByClass
+        for (let i = 0; i < e1.length; i++) {
+            e1[i].innerHTML = "Abcd";
+        }
+        console.log(e1.innerHTML);
+
+            //Below from following is all about getElementsByTagName
+
+        let e2 = document.getElementsByTagName("h1")
+        for (let i = 0; i < e2.length; i++) {
+            e2[i].innerHTML = "DETAILS";
+        }
+        let e3 = document.getElementsByTagName("p")
+        for (let i = 0; i < e3.length; i++) {
+            e3[i].innerHTML = "lorem2";
+        }
+        let div1 = document.getElementById("div1")
+        let para = div1.getElementsByTagName("p")
+        for (let i = 0; i < para.length; i++) {
+            para[i].innerHTML = "paragram of details";
+        }
+        console.log(para);
+
+    </script>
+</body>
+
+</html> 

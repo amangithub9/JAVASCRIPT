@@ -1,0 +1,9 @@
+Prototype in js
+
+A js object is an entity having state and behaviour(properties and method)
+
+JS objects have a special properties called Prototype.
+
+we can set prototype using (__prototype__).
+
+*if prototype and method have same method objects method will be used.
