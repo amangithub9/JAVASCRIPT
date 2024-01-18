@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start/Stop Button</title>
+</head>
+<body>
+
+<button id="toggleBtn">Start</button>
+
+<script>
+let interval; // Variable to store the interval reference
+
+const toggleButton = document.getElementById('toggleBtn');
+
+toggleButton.addEventListener('click', togglePrinting);
+
+function togglePrinting() {
+  if (!interval) {
+    // console.log('Start');
+    interval = setInterval(function() {
+      console.log('Start');
+    }, 1000); // Change the interval (in milliseconds) as needed
+    toggleButton.textContent = 'Stop';
+  } else {
+    console.log('Stop');
+    clearInterval(interval);
+    interval = null;
+    toggleButton.textContent = 'Start';
+  }
+}
+</script>
+
+</body>
+</html>

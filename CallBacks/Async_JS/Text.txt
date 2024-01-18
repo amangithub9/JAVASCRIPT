@@ -1,0 +1,30 @@
+-------------Asynchronous JavaScript (async JS)------------
+ It refers to techniques and tools for handling tasks that don't complete immediately, allowing other code to execute while those tasks are in progress. This is crucial for creating responsive and non-blocking applications that don't freeze while waiting for operations like:
+
+Fetching data from servers
+Reading or writing files
+User interactions (clicks, input)
+Animations and transitions
+Timers
+
+----------Key Concepts:-----------
+
+--Event Loop:-- JavaScript's single-threaded environment uses an event loop to manage asynchronous operations. It continuously checks for completed tasks and executes their callbacks in a queue, ensuring responsiveness.
+
+--Promises:-- A promise represents the eventual result of an asynchronous operation, providing a cleaner way to handle success or failure. You can chain promise-based operations using then and catch methods.
+
+--Async/Await:-- Syntactic sugar built on top of promises, making asynchronous code look more synchronous. You declare functions as async and use await to pause execution until a promise resolves.
+
+-----Example----
+
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+fetchData(); // Call the async function
