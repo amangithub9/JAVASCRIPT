@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #313131">
+    <script>
+        /* Lexical Scope in Javascript*/
+
+      function outer() {
+        let username = "aman";
+        // console.log(secret); // u cant access because parents can't get anything from their childrens
+        function inner() {
+          // let secret = "abc123";
+          console.log("inner: ", username);
+        }
+        function innerTwo() {
+          console.log("inner: ", username);
+        }
+        // console.log(secret); // u cant access because sblings can't share their property
+        inner();
+        innerTwo();
+      }
+      outer();
+      console.log("outer: ", username);
+      
+    </script>
+  </body>
+</html>
