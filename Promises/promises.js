@@ -90,8 +90,9 @@ consumedPromiseFive();
 
 /*
 !----- using try catch method
+*/
  
-async function getAllUsers(){
+async function getAllUsers(){ 
     try {
         const responce = await fetch('https://jsonplaceholder.typicode.com/users')
         // console.log(responce);
@@ -104,7 +105,7 @@ async function getAllUsers(){
 
 getAllUsers();
 
-*/
+
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((responce) => {
