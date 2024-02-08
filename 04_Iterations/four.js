@@ -6,7 +6,11 @@
 // });
 // console.log(values);
 
-const myNums = [1,2,3,4,5,6,7,8,9,10];
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
- const number = myNums.filter((num) => num > 6);
- console.log(number);
+const number = myNums.filter((num) => num > 6);
+console.log(number);
+
+
+const numner1 = myNums.filter((num) => num < 8);
+console.log(numner1)
