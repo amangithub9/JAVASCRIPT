@@ -58,3 +58,4 @@ class Engeneer extends Parent{
 
 let obj = new Engeneer("Chemical Engineer");
 // let obj = new Engeneer();
+let obj1 = new Engeneer("CSE");
